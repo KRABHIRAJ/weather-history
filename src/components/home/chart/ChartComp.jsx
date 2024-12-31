@@ -118,7 +118,7 @@ const ChartComp = () => {
   };
   return (
     <div style={{ width: "100%", maxWidth: "1100px", margin: "0 auto", padding: "1rem" }}>
-    <div className="h-[640px] sm:h-[500px] md:h-[430px]" style={{ position: "relative", width: "100%" }}>
+    <div className="h-[550px] sm:h-[500px] md:h-[430px]" style={{ position: "relative", width: "100%" }}>
       <Line data={chartData} options={options} />
     </div>
   </div>

@@ -1,4 +1,3 @@
-import getWeatherDetails from "../utils/functions/getWeatherDetails";
 import { DatePickerComp, InputTag } from "../../components/index";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -7,9 +6,7 @@ import {
   setLatitude,
   setLongitude,
   setToDate,
-  setWeatherData,
 } from "../../store/slices/appSlice";
-import { format } from "date-fns";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -32,16 +29,11 @@ const Home = () => {
     } else if (toDate.length === 0) {
       dispatch(setErrMsg("Please Enter to date"));
     } else {
-      const formattedFromDate = format(fromDate, "yyyy-MM-dd");
-      const formattedToDate = format(toDate, "yyyy-MM-dd");
-      const response = await getWeatherDetails(latitude, longitude, formattedFromDate, formattedToDate);
-      
-      dispatch(setWeatherData(response));
       navigate('/grid')
-      dispatch(setFromDate(""));
-      dispatch(setLatitude(""));
-      dispatch(setLongitude(""));
-      dispatch(setToDate(""));
+      // dispatch(setFromDate(""));
+      // dispatch(setLatitude(""));
+      // dispatch(setLongitude(""));
+      // dispatch(setToDate(""));
     }
   };
 

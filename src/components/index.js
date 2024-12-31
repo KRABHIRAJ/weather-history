@@ -5,13 +5,14 @@ import DatePickerComp from "./home/DatePickerComp";
 import GridLayout from "./home/GridLayout";
 import Grid from "./home/grid/Grid";
 import ChartComp from "./home/chart/ChartComp";
-
+import SkeletonContainer from "./skeleton/SkeletonContainer";
 export {
-    ChartComp,
-    Grid,
-    DatePickerComp,
-    InputTag,
-    Home,
-    Header,
-    GridLayout
-}
+  SkeletonContainer,
+  ChartComp,
+  Grid,
+  DatePickerComp,
+  InputTag,
+  Home,
+  Header,
+  GridLayout,
+};
