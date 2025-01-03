@@ -30,10 +30,7 @@ const Home = () => {
       dispatch(setErrMsg("Please Enter to date"));
     } else {
       navigate('/grid')
-      // dispatch(setFromDate(""));
-      // dispatch(setLatitude(""));
-      // dispatch(setLongitude(""));
-      // dispatch(setToDate(""));
+      
     }
   };
 
